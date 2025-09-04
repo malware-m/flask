@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+  </head>
+  <body>
+    <h1>Hello {{name}}, Welcome to kingdom of CyberSec</h1>
+    {% if is_topper%}
+    <p>You are a topper.</p>
+    {% else %}
+    <p>You need to work hard</p>
+    {% endif %}
+
+    <h3>Your enrolled subjects</h3>
+    <ul>
+      {% for subject in subjects %} <!-- This will end the if  -->
+      <li>{{subject}}</li> <!-- Pass the subject  -->
+      {% endfor %}
+    </ul>
+  </body>
+</html>

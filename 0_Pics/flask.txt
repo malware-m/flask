@@ -1,0 +1,40 @@
+
+
+Messages that appear only once like pop-up after some action are flash messages.
+This message retrive from HTML.
+Always set secret key because for flash flask used session. Messages always go with flash.
+
+--------------------------
+
+ // Use of for loop 
+{% for msg in messages %}
+{{ msg }}
+
+--------------------------
+
+ // Use of flash in Flask
+if request.form="POST":
+    if not name:
+        flash("Name can't be empty")
+        return redirect(url_for("form"))
+    flash(f"Thanks {name}, your feedback has been saved")
+    return render_template("thanksyou.html")
+return render_template("form.html")
+
+
+# best way  
+redirect(url_for("/home"))
+# bad way if url change it can break page
+redirect(/home)
+
+
+# Python manual module for protection 
+from flask_wtf import FlaskForm
+from wtfforms import StringField ,PasswordFiedl,SubmitField
+from wtforms.validators import DataRequired, Email, Length
+
+class RegistrationForm(FlaskForm):
+    name = StringField("Full Name", validators=[DataRequired()])
+    email = StringField("Email", validators=[DataRequired(),Email()])
+    Password = StringField("Password", validators=[DataRequired(),Length(8)])
+    submit = SubmitField("Register")

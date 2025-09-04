@@ -1,0 +1,31 @@
+
+Always create seprate file for every feature and use blueprint.
+
+==> Blueprints are a way to organize your application into reusable components or modules. Instead of having all routes and logic in one file, you can split them into logical pieces (e.g., auth, admin, api, etc.)
+
+
+==> A Model in Flask is a Python class that represents a table in your database. ( Contains DB models)
+
+
+==> __init__.py — What it does:
+
+1. Creates the Flask app using the app factory pattern (create_app() function).
+
+2. Registers Blueprints (like auth, admin, main, etc.).
+
+3. Initializes things like the database, login manager, etc.
+
+
+==> Template directory contail all HTML files.
+
+
+==> Files that don't change will be under static directory.
+
+
+SQLite:
+ file based database engine. It comes built into python and can work with small/medium level flask applications. No setup needed. 
+
+
+ Can not handle huge traffic
+ No support of high end features
+ 

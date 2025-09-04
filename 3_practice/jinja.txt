@@ -1,0 +1,19 @@
+
+
+Jinja is python template engine used to built form etc.
+Template engine logic is mix of html and python
+
+
+{{ variable }}
+{{ name }}
+
+conditional
+is_topper=true
+
+{% if is_topper %}
+<p>You are topper</p>
+
+{% else %}
+<p> You need to work hard</p>
+
+{% endif %}
