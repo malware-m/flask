@@ -29,3 +29,4 @@ SQLite:
  Can not handle huge traffic
  No support of high end features
  
+ SqlALchamy python library help to write code in python to work with database.

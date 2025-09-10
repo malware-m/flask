@@ -1,5 +1,5 @@
 
-from flask import Flask,
+from flask import Flask
 from router.auth import auth_bp  # login blueprint
 
 def create_app():
