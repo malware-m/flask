@@ -1,0 +1,35 @@
+
+to activate virtual enviroment
+python -n venv venv
+activate
+pip install flask
+pip install flask_sqlalchemy
+
+
+==> Create an app factory where everything like modal,routes etc will be placed.
+==> In modals folder we add Database columns user, tasks and status etc will be placed here.
+==> In routes folder logic of out all routes. By adding __init__.py file so python will not consider it as normal folder.
+
+==> File auth.py will contain all login or logout routes etc
+==> task.py will contain update,view or delete logic will be here.
+==> templates folder will contain all html files.
+==> Static folder will contain css and javascript files and folders.
+
+
+==> Steps to Follow: <==
+1) define the features
+    why creating this
+    what it will do
+
+2) clean project structure
+3) setup app factory
+    Db intilize
+    app Create
+    set configration
+    Register the blueprint
+
+4) Define the modals
+5) Ready all routes
+6) Html pages will desing
+7) Add css
+8) Database initilization
